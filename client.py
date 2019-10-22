@@ -1,6 +1,6 @@
 import socket                   # Import socket module
 
-s = socket.socket()             # Create a socket object
+s = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)             # Create a socket object
 host = ""  #Ip address that the TCPServer is there
 #host = socket.gethostname()
 port = 50000                     # Reserve a port for your service every new transfer wants a new port or you must wait.
