@@ -2,8 +2,8 @@ import socket                   # Import socket module
 
 port = 50000                    # Reserve a port for your service every new transfer wants a new port or you must wait.
 #s = socket.socket()             # Create a socket object
-host = ""   # Get local machine name
-#host = socket.gethostname()
+#host = ""   # Get local machine name
+host = socket.gethostname()
 addrs = socket.getaddrinfo("localhost", port, socket.AF_INET6, 0, socket.SOL_TCP)
 entry0 = addrs[0]
 sockaddr = entry0[-1]
