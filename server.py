@@ -4,7 +4,7 @@ port = 50000                    # Reserve a port for your service every new tran
 #s = socket.socket()             # Create a socket object
 #host = ""   # Get local machine name
 host = socket.gethostname()
-addrs = socket.getaddrinfo("localhost", port, socket.AF_INET6, 0, socket.SOL_TCP)
+addrs = socket.getaddrinfo(host, port, socket.AF_INET6, 0, socket.SOL_TCP)
 entry0 = addrs[0]
 sockaddr = entry0[-1]
 
